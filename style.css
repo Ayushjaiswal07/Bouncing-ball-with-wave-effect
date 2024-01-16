@@ -1,0 +1,112 @@
+*{
+    background-color: rgb(24,24,24);
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.container{
+    height: 50vh;
+    width: 100vw;
+    
+}
+
+
+.ball{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 20vh;
+    left: 40vw; 
+    background-color: rgb(221, 230, 91);
+    box-shadow: 0 0 2em rgb(221, 230, 91),   inset 0 0 0.2em rgb(221, 230, 91);
+
+    animation-name: ball;
+    animation-duration: 1s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ball{
+    form{top:20vh;}
+
+    to{top:2vh;}
+}
+
+
+
+.wave_container{
+    
+    background-color: aqua;
+
+}
+
+
+.wave{
+    border: 2px solid rgb(221, 230, 91);
+    box-shadow: 0 0 1em rgb(221, 230, 91),   inset 0 0 0.2em rgb(221, 230, 91);
+    position: absolute;
+    background: transparent;
+    rotate: x 70deg;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: wave;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+ 
+}
+
+
+#wave1{
+    height: 5vw;
+    width: 5vw;
+    top: 47vh;
+    left: 44.7vw;
+    
+    
+    animation-name: wave;
+    animation-duration: 2s;
+
+}
+
+#wave2{
+    height: 3vw;
+    width: 3vw;
+    top: 49vh;
+    left: 45.7vw;
+
+    animation-name: wave;
+    animation-duration: 4s;
+    
+}
+
+#wave3{
+    height: 1vw;
+    width: 1vw;
+    top: 51vh;
+    left: 46.7vw;
+
+    animation-name: wave;
+    animation-duration: 2s;
+}
+
+@keyframes wave{
+    form{transform: scale(1);}
+    to{transform: scale(10);}
+}
+
+
+
+
+
+
+
+
+
